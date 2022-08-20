@@ -1,0 +1,42 @@
+@import url("https://fast.fonts.net/lt/1.css?apiType=css&c=0dc5a12a-20f8-4b91-b8a2-96af705f52dd&fontids=1462213,1462215,1462217");
+@font-face{
+    font-family:"Venus W04 Reclining";
+    src:url("../Fonts/1462213/bf7b2907-6f3d-42c8-846a-659c4426d7e7.woff2") format("woff2"),url("../Fonts/1462213/3b11f783-e7fa-49e9-b726-23778b575081.woff") format("woff");
+}
+@font-face{
+    font-family:"Venus W04 Regular";
+    src:url("../Fonts/1462215/c49acf29-eb76-4502-be32-ada3cf7aaa4e.woff2") format("woff2"),url("../Fonts/1462215/3c3884f3-ff30-4796-bfde-2f95e1723c39.woff") format("woff");
+}
+@font-face{
+    font-family:"Venus W04 Italic";
+    src:url("../Fonts/1462217/a255476e-a541-4de6-84ab-2ee2f4c1fcb7.woff2") format("woff2"),url("../Fonts/1462217/891a8b88-8991-41ec-a029-22e6caf9c666.woff") format("woff");
+}
+
+
+
+body{
+	display: flex;
+	margin: 0;
+	flex-wrap: wrap;
+	font-family: 'Venus W04 Regular', sans-serif;
+}
+
+h1{
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+
+.logo_image{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 30rem;
+	opacity: 0;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+}
+
+.logo_image.visible{
+	opacity: 1;
+}

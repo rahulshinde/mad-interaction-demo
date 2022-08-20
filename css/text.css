@@ -1,0 +1,62 @@
+html{
+	font-size: 30px;
+}
+
+h1{
+	font-size: 1rem;
+}
+
+body.x-0,
+body.x-1{
+	font-family: 'Venus W04 Reclining';
+	font-size: 0.925rem;
+}
+
+body.x-3,
+body.x-4{
+	font-family: 'Venus W04 Italic';
+	font-size: 0.9875rem;
+
+}
+
+#header{
+	position: fixed;
+	display: flex;
+	top: 2rem;
+	padding: 0 2rem;
+	box-sizing: border-box;
+	left: 0rem;
+	bottom: 2rem;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+	width: 50%;
+}
+
+#body_content{
+	min-height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 2rem;
+	width: calc(50% - 4rem);
+	margin-left: 50%;
+}
+
+#body_content p,
+#body_content ol{
+	margin-top: 0;
+}
+
+#body_content ol{
+	margin-bottom: 0;
+}
+
+.logo_image{
+	width: auto;
+	max-width: 50%;
+	max-height: 50vh;
+	left: 25%;
+	top: 66.66%;
+}
