@@ -29,9 +29,10 @@ function trackQuadrant(e){
 	var coord_x = Math.floor(x/fifth_width);
 	var coord_y = Math.floor(y/third_height);
 
-	if (current_coord && coord_x != current_coord[0]){
+	if (current_coord && (coord_x != current_coord[0] || coord_y != current_coord[1])){
 		document.body.removeAttribute('class');
 		document.body.classList.add('x-' + coord_x);
+		document.body.classList.add('y-' + coord_y);
 	}
 
 	if ([coord_x, coord_y] == current_coord){

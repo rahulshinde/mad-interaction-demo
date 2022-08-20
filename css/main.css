@@ -26,17 +26,21 @@ h1{
 	text-transform: uppercase;
 }
 
+a{
+	color: #000;
+}
+
 
 .logo_image{
 	position: fixed;
 	top: 50%;
 	left: 50%;
-	width: 30rem;
-	opacity: 0;
+	max-height: 35vh;
+	display: none;
 	transform: translate(-50%, -50%);
 	pointer-events: none;
 }
 
 .logo_image.visible{
-	opacity: 1;
+	display: block;
 }
