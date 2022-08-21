@@ -1,5 +1,5 @@
 html{
-	font-size: 28px;
+	font-size: 50px;
 }
 
 h1{
@@ -21,6 +21,7 @@ body.x-4.y-2,
 .rec{
 	font-family: 'Venus W04 Reclining';
 	font-size: 0.925rem;
+	line-height: 1.215;
 }
 
 body.x-0.y-2,
@@ -30,6 +31,7 @@ body.x-4.y-0,
 .ital{
 	font-family: 'Venus W04 Italic';
 	font-size: 0.9875rem;
+	line-height: 1.123;
 }
 
 
@@ -274,4 +276,34 @@ footer *{
 
 #body_content ol{
 	margin-bottom: 0;
+}
+
+@media (max-width: 2500px){
+	html{
+		font-size: 45px;
+	}
+}
+
+@media (max-width: 2200px){
+	html{
+		font-size: 40px;
+	}
+}
+
+@media (max-width: 1900px){
+	html{
+		font-size: 35px;
+	}
+}
+
+@media (max-width: 1600px){
+	html{
+		font-size: 32px;
+	}
+}
+
+@media (max-width: 1400px){
+	html{
+		font-size: 28px;
+	}
 }
