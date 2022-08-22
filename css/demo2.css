@@ -265,7 +265,13 @@ footer{
 
 	.button,
 	.button:before{
-		border: 0.1rem solid;
+		border: 0.075rem solid;
+	}
+
+	.button:before{
+		width: calc(100% + 0.15rem);
+		height: calc(100% + 0.15rem);
+		transform: translate(-0.075rem, -0.075rem);
 	}
 
 
