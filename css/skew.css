@@ -1,0 +1,251 @@
+body.x-1.y-0 .skew,
+body.x-3.y-4 .skew,
+body.x-0.y-1 .skew,
+body.x-4.y-3 .skew{
+	transform: skew(10deg) translate(0.05rem);
+}
+
+body.x-0.y-0 .skew,
+body.x-4.y-4 .skew,
+.rec{
+	transform: skew(20deg) translate(0.1rem);
+}
+
+body.x-1.y-1 .skew,
+body.x-3.y-3 .skew{
+	transform: skew(5deg) translate(0.025rem);
+}
+
+body.x-3.y-1 .skew,
+body.x-1.y-3 .skew{
+	transform: skew(-5deg) translate(-0.025rem);
+}
+
+body.x-0.y-3 .skew,
+body.x-3.y-0 .skew,
+body.x-4.y-1 .skew,
+body.x-1.y-4 .skew{
+	display: inline-block;
+	transform: skew(-10deg) translate(-0.05rem);
+}
+
+body.x-0.y-4 .skew,
+body.x-4.y-0 .skew,
+.ital{
+	transform: skew(-20deg) translate(-0.1rem);
+}
+
+.skew,
+.ital,
+.rec{
+	display: inline-block;
+	transform-origin: center bottom;
+}
+
+/* Row 1*/
+
+body.x-0.y-0 .button{
+	transform: translate(-0.4rem, -0.4rem);
+}
+body.x-1.y-0 .button{
+	transform: translate(-0.2rem, -0.4rem);
+}
+body.x-2.y-0 .button{
+	transform: translate(0rem, -0.4rem);
+}
+
+body.x-3.y-0 .button{
+	transform: translate(0.2rem, -0.4rem);
+}
+body.x-4.y-0 .button{
+	transform: translate(0.4rem, -0.4rem);
+}
+
+body.x-0.y-0 .button:after{
+	top: 0.8rem;
+	left: 0.8rem
+}
+body.x-1.y-0 .button:after{
+	top: 0.8rem;
+	left: 0.4rem;
+}
+body.x-2.y-0 .button:after{
+	top: 0.8rem;
+	left: 0.0rem
+}
+
+body.x-3.y-0 .button:after{
+	left: -0.4rem;
+	top: 0.8rem;
+}
+body.x-4.y-0 .button:after{
+	left: -0.8rem;
+	top: 0.8rem;
+}
+
+/* Row 2 */
+
+body.x-0.y-1 .button{
+	transform: translate(-0.4rem, -0.2rem);
+}
+body.x-1.y-1 .button{
+	transform: translate(-0.2rem, -0.2rem);
+}
+body.x-2.y-1 .button{
+	transform: translate(0rem, -0.2rem);
+}
+
+body.x-3.y-1 .button{
+	transform: translate(0.2rem, -0.2rem);
+}
+body.x-4.y-1 .button{
+	transform: translate(0.4rem, -0.2rem);
+}
+
+body.x-0.y-1 .button:after{
+	left: 0.8rem;
+	top: 0.4rem;
+}
+body.x-1.y-1 .button:after{
+	left: 0.4rem;
+	top: 0.4rem;
+}
+
+body.x-2.y-1 .button:after{
+	left: 0rem;
+	top: 0.4rem;
+}
+
+body.x-3.y-1 .button:after{
+	left: -0.4rem;
+	top: 0.4rem;
+}
+body.x-4.y-1 .button:after{
+	left: -0.8rem;
+	top: 0.4rem;
+}
+
+/* Row 3 */
+
+
+body.x-0.y-2 .button{
+	transform: translate(-0.4rem, 0rem);
+}
+body.x-1.y-2 .button{
+	transform: translate(-0.2rem, 0rem);
+}
+body.x-2.y-2 .button{
+	transform: translate(0rem, 0rem);
+}
+
+body.x-3.y-2 .button{
+	transform: translate(0.2rem, 0rem);
+}
+body.x-4.y-2 .button{
+	transform: translate(0.4rem, 0rem);
+}
+
+body.x-0.y-2 .button:after{
+	left: 0.8rem;
+	top: 0rem;
+}
+body.x-1.y-2 .button:after{
+	left: 0.4rem;
+	top: 0rem;
+}
+
+body.x-2.y-2 .button:after{
+	left: 0rem;
+	top: 0rem;
+}
+
+body.x-3.y-2 .button:after{
+	left: -0.4rem;
+	top: 0rem;
+}
+body.x-4.y-2 .button:after{
+	left: -0.8rem;
+	top: 0rem;
+}
+
+/* Row 4 */
+
+body.x-0.y-3 .button{
+	transform: translate(-0.4rem, 0.2rem);
+}
+body.x-1.y-3 .button{
+	transform: translate(-0.2rem, 0.2rem);
+}
+body.x-2.y-3 .button{
+	transform: translate(0rem, 0.2rem);
+}
+
+body.x-3.y-3 .button{
+	transform: translate(0.2rem, 0.2rem);
+}
+body.x-4.y-3 .button{
+	transform: translate(0.4rem, 0.2rem);
+}
+
+body.x-0.y-3 .button:after{
+	left: 0.8rem;
+	top: -0.4rem;
+}
+body.x-1.y-3 .button:after{
+	left: 0.4rem;
+	top: -0.4rem;
+}
+body.x-2.y-3 .button:after{
+	left: 0rem;
+	top: -0.4rem;
+}
+
+body.x-3.y-3 .button:after{
+	left: -0.4rem;
+	top: -0.4rem;
+}
+body.x-4.y-3 .button:after{
+	left: -0.8rem;
+	top: -0.4rem;
+}
+
+/* Row 5 */
+
+body.x-0.y-4 .button{
+	transform: translate(-0.4rem, 0.4rem);
+}
+body.x-1.y-4 .button{
+	transform: translate(-0.2rem, 0.4rem);
+}
+body.x-2.y-4 .button{
+	transform: translate(0rem, 0.4rem);
+}
+
+body.x-3.y-4 .button{
+	transform: translate(0.2rem, 0.4rem);
+}
+body.x-4.y-4 .button{
+	transform: translate(0.4rem, 0.4rem);
+}
+
+body.x-0.y-4 .button:after{
+	left: 0.8rem;
+	top: -0.8rem;
+}
+body.x-1.y-4 .button:after{
+	left: 0.4rem;
+	top: -0.8rem;
+}
+body.x-2.y-4 .button:after{
+	left: 0rem;
+	top: -0.8rem;
+}
+
+body.x-3.y-4 .button:after{
+	left: -0.4rem;
+	top: -0.8rem;
+}
+body.x-4.y-4 .button:after{
+	left: -0.8rem;
+	top: -0.8rem;
+}
