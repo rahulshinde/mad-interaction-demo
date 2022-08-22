@@ -6,14 +6,21 @@ body.x-4.y-3 .skew{
 }
 
 body.x-0.y-0 .skew,
-body.x-4.y-4 .skew,
-.rec{
+body.x-4.y-4 .skew{
 	transform: skew(20deg) translate(0.1rem);
 }
 
 body.x-1.y-1 .skew,
 body.x-3.y-3 .skew{
 	transform: skew(5deg) translate(0.025rem);
+}
+
+.rec{
+	transform: skew(10deg) translate(0.25rem);
+}
+
+.ital{
+	transform: skew(-10deg) translate(-0.25rem);	
 }
 
 body.x-3.y-1 .skew,
@@ -30,14 +37,14 @@ body.x-1.y-4 .skew{
 }
 
 body.x-0.y-4 .skew,
-body.x-4.y-0 .skew,
-.ital{
+body.x-4.y-0 .skew{
 	transform: skew(-20deg) translate(-0.1rem);
 }
 
 .skew,
 .ital,
-.rec{
+.rec,
+.pet{
 	display: inline-block;
 	transform-origin: center bottom;
 }

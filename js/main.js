@@ -10,8 +10,12 @@ var window_width,
 
 function init(){
 	setVars();
-	window.addEventListener('mousemove', trackQuadrant)
+	window.addEventListener('mousemove', trackQuadrant);
 	window.addEventListener('resize', setVars)
+
+	document.querySelectorAll('.pet').forEach((e)=>{
+		e.addEventListener('mouseenter', cyclePet);
+	});
 
 	videoInteraction()
 
@@ -23,6 +27,18 @@ function setVars(){
 
 	fifth_width = window_width/5;
 	fifth_height = window_height/5;
+}
+
+function cyclePet(e){
+	var target_list = e.target.classList;
+	if (target_list.contains('rec')){
+		target_list.remove('rec');
+		target_list.add('ital');
+	} else if(target_list.contains('ital')){
+		target_list.remove('ital');
+	} else{
+		target_list.add('rec');
+	}
 }
 
 function trackQuadrant(e){
