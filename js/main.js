@@ -6,15 +6,42 @@ var window_width,
 		fifth_height,
 		coord_x,
 		coord_y,
-		current_coord;
+		current_coord,
+		animation_interval,
+		auto_playing_animation,
+		animation_position;
+
+var animation_sequence = [
+	[2,2],
+	[2,1],
+	[2,0],
+	[3,0],
+	[4,0],
+	[4,1],
+	[4,2],
+	[4,3],
+	[4,4],
+	[3,4],
+	[2,4],
+	[1,4],
+	[0,4],
+	[0,3],
+	[0,2],
+	[0,1],
+	[0,0],
+	[1,0],
+	[2,0],
+	[2,1]
+]
 
 function init(){
+	animation_position = 0;
 	setVars();
 	window.addEventListener('mousemove', trackQuadrant);
 	window.addEventListener('resize', setVars)
 
 	document.querySelectorAll('.pet').forEach((e)=>{
-		e.addEventListener('mouseenter', cyclePet);
+		e.addEventListener('mouseenter', cyclePetHoverHandler);
 	});
 
 	videoInteraction()
@@ -27,10 +54,49 @@ function setVars(){
 
 	fifth_width = window_width/5;
 	fifth_height = window_height/5;
+
+	if(window_width <= 1100 && !auto_playing_animation){
+		startAutoplay();
+		auto_playing_animation = true;
+	} else if (window_width > 1100 && auto_playing_animation){
+		auto_playing_animation = false;
+		clearInterval(animation_interval);
+	}
 }
 
-function cyclePet(e){
-	var target_list = e.target.classList;
+function startAutoplay(){
+	animation_interval = setInterval(function(){
+		cycleAnimation();
+		randomPet();
+	}, 2000);
+}
+
+function cycleAnimation(){
+	setQuadrant(animation_sequence[animation_position][0], animation_sequence[animation_position][1]);
+
+	animation_position = animation_position + 1;
+	if (animation_position > animation_sequence.length - 1){
+		animation_position = 0;
+	}
+}
+
+function randomPet(){
+	document.querySelectorAll('.pet').forEach((e)=>{
+		if(Math.random() > 0.5){
+			cyclePet(e.classList);
+		}
+	})
+}
+
+function cyclePetHoverHandler(e){
+	if (window_width < 1100){
+		return;
+	}
+
+	cyclePet(e.target.classList)
+}
+
+function cyclePet(target_list){
 	if (target_list.contains('rec')){
 		target_list.remove('rec');
 		target_list.add('ital');
@@ -42,32 +108,25 @@ function cyclePet(e){
 }
 
 function trackQuadrant(e){
+	if (window_width < 1100){
+		return;
+	}
+
 	var x = e.clientX;
 	var y = e.clientY;
 
-	setQuadrant(x, y);
-
+	calcQuadrant(x, y);
 }
 
-function setQuadrant(x, y){
+function calcQuadrant(x, y){
 	var coord_x = Math.floor(x/fifth_width);
 	var coord_y = Math.floor(y/fifth_height);
 
-	if (coord_x < 0){
-		coord_x = 0
-	}
-	if (coord_x > 4){
-		coord_x = 4
-	}
-	if (coord_y < 0){
-		coord_y = 0
-	}
-	if (coord_y > 4){
-		coord_y = 4
-	}
+	setQuadrant(coord_x, coord_y)
+}
 
-	console.log(coord_x, coord_y)
-
+function setQuadrant(coord_x, coord_y){
+	
 	if (current_coord && (coord_x != current_coord[0] || coord_y != current_coord[1])){
 		document.body.removeAttribute('class');
 		document.body.classList.add('x-' + coord_x);
