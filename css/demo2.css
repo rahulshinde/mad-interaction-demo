@@ -215,7 +215,7 @@ footer{
 	#logos{
 		position: sticky;
 		position: -webkit-sticky;
-		bottom: 0;
+		bottom: 2rem;
 		height: 30rem;
 	}
 	.header_section{
@@ -228,13 +228,14 @@ footer{
 		margin-bottom: 0;
 		min-height: auto;
 		padding-top: 6rem;
-		background-color: #fff;
+		/*background-color: #fff;*/
 	}
 
 	#body_content{
 		min-height: 0;
+		padding-top: 2rem;
 		margin-bottom: 0;
-		background-color: #fff;
+		background-color: rgba(255,255,255,0.8);
 	}
 
 	#body_content,
@@ -256,7 +257,6 @@ footer{
 
 	header{
 		padding-top: 4rem;
-		padding-bottom: 2.5rem;
 	}
 
 	.header_section{
