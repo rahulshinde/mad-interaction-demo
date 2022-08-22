@@ -214,6 +214,7 @@ footer{
 
 	#logos{
 		position: sticky;
+		position: -webkit-sticky;
 		bottom: 0;
 		height: 30rem;
 	}

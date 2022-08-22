@@ -31,8 +31,8 @@
 }
 
 @media (max-width: 767px){
-	.video{
+	.video,
+	.video.cornered{
 		width: calc(100% - 2rem);
-		height: auto;
 	}
 }
