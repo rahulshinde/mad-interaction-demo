@@ -250,6 +250,19 @@ footer{
 		font-size: 18px;
 	}
 
+	.button.registration{
+		top: 1rem;
+	}
+
+	header{
+		padding-top: 4rem;
+		padding-bottom: 2.5rem;
+	}
+
+	.header_section{
+		margin-bottom: 1.5rem;
+	}
+
 	.button,
 	.button:before{
 		border: 0.1rem solid;
