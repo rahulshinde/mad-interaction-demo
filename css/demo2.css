@@ -210,3 +210,24 @@ footer{
 		width: 30rem;
 	}
 }
+
+@media (max-width: 767px){
+	header{
+		position: relative;
+		width: 100%;
+		margin-bottom: 2rem;
+		min-height: 100vh;
+	}
+
+	#body_content{
+		min-height: 0;
+		margin-bottom: 0;
+	}
+
+	#body_content,
+	footer{
+		margin-left: 2rem;
+		margin-right: 2rem;
+		width: auto;
+	}
+}
