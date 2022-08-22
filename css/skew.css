@@ -49,6 +49,10 @@ body.x-4.y-0 .skew{
 	transform-origin: center bottom;
 }
 
+.pet{
+	transition: transform linear 0.1s;
+}
+
 /* Row 1*/
 
 body.x-0.y-0 .button{

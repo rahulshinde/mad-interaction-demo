@@ -68,7 +68,7 @@ function startAutoplay(){
 	animation_interval = setInterval(function(){
 		cycleAnimation();
 		randomPet();
-	}, 2000);
+	}, 1000);
 }
 
 function cycleAnimation(){
