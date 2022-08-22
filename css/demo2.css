@@ -212,11 +212,8 @@ footer{
 }
 
 @media (max-width: 767px){
-	header{
-		position: relative;
-		width: 100%;
-		margin-bottom: 2rem;
-		min-height: 100vh;
+	html{
+		font-size: 20px;
 	}
 
 	#body_content{
@@ -226,8 +223,8 @@ footer{
 
 	#body_content,
 	footer{
-		margin-left: 2rem;
-		margin-right: 2rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
 		width: auto;
 	}
 }

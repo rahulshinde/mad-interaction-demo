@@ -11,6 +11,7 @@ var window_width,
 function init(){
 	setVars();
 	window.addEventListener('mousemove', trackQuadrant);
+	window.addEventListener('touchmove', trackTouchQuadrant);
 	window.addEventListener('resize', setVars)
 
 	document.querySelectorAll('.pet').forEach((e)=>{
@@ -41,12 +42,39 @@ function cyclePet(e){
 	}
 }
 
+function trackTouchQuadrant(e){
+	var x = e.targetTouches[0].screenX;
+	var y = e.targetTouches[0].screenY;
+
+	setQuadrant(x, y);
+}
+
 function trackQuadrant(e){
 	var x = e.clientX;
 	var y = e.clientY;
 
+	setQuadrant(x, y);
+
+}
+
+function setQuadrant(x, y){
 	var coord_x = Math.floor(x/fifth_width);
 	var coord_y = Math.floor(y/fifth_height);
+
+	if (coord_x < 0){
+		coord_x = 0
+	}
+	if (coord_x > 4){
+		coord_x = 4
+	}
+	if (coord_y < 0){
+		coord_y = 0
+	}
+	if (coord_y > 4){
+		coord_y = 4
+	}
+
+	console.log(coord_x, coord_y)
 
 	if (current_coord && (coord_x != current_coord[0] || coord_y != current_coord[1])){
 		document.body.removeAttribute('class');
