@@ -6,6 +6,10 @@ body{
 	letter-spacing: 0.04em;
 }
 
+::selection{
+	color: darkgray;
+}
+
 h1{
 	font-size: 2rem;
 	margin-top: 1rem;
@@ -19,26 +23,26 @@ h1{
 
 body.x-1.y-0 .skew,
 body.x-3.y-2 .skew{
-	transform: skew(5deg) translate(0.05rem);
+	transform: skew(10deg) translate(0.05rem);
 }
 
 body.x-0.y-0 .skew,
 body.x-4.y-2 .skew,
 .rec{
-	transform: skew(10deg) translate(0.1rem);
+	transform: skew(20deg) translate(0.1rem);
 }
 
 
 body.x-1.y-2 .skew,
 body.x-3.y-0 .skew{
 	display: inline-block;
-	transform: skew(-5deg) translate(-0.05rem);
+	transform: skew(-10deg) translate(-0.05rem);
 }
 
 body.x-0.y-2 .skew,
 body.x-4.y-0 .skew,
 .ital{
-	transform: skew(-10deg) translate(-0.1rem);
+	transform: skew(-20deg) translate(-0.1rem);
 }
 
 .skew,

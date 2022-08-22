@@ -12,6 +12,9 @@ function init(){
 	setVars();
 	window.addEventListener('mousemove', trackQuadrant)
 	window.addEventListener('resize', setVars)
+
+	videoInteraction()
+
 }
 
 function setVars(){
@@ -44,4 +47,20 @@ function trackQuadrant(e){
 		}
 		document.getElementById('logo-' + coord_x + '-' + coord_y).classList.add('visible');
 	}
+}
+
+function videoInteraction(){
+	var vid = document.querySelector(".video")
+	var cornered = false
+
+	vid.addEventListener('click', function(){
+		if(!cornered){
+			vid.classList.add('cornered')
+			cornered = true
+		}else{
+			vid.classList.remove('cornered')
+			cornered = false
+		}
+		
+	})
 }

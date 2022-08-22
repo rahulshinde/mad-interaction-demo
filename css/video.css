@@ -1,0 +1,19 @@
+.video{
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: fixed;
+	background: lightgray;
+	width: 40vw;
+	height: 22.5vw;
+	border-radius: .2em;
+	box-shadow: .2em .2em 1rem lightgray, -.2em -.2em 1rem lightgray;
+	transition: all .2s ease-in;
+}
+
+.video.cornered{
+	top: 100%;
+	left: 100vw;
+	transform: translate(calc(-100% - 1rem), calc(-100% - 1rem)) scale(.5);
+	transform-origin: bottom right;
+}
