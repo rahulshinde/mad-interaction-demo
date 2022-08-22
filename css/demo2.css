@@ -44,10 +44,6 @@ h1{
 	z-index: 4;
 }
 
-#button_container{
-	display: block;
-}
-
 .button_background{
 	position: absolute;
 	top: 0;
@@ -159,13 +155,24 @@ footer{
 	margin-left: 50%;
 }
 
-#body_content p,
-#body_content ol{
+#body_content p{
 	margin-top: 0;
 }
 
-#body_content ol{
-	margin-bottom: 0;
+.num_list{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.num{
+	margin-left: 1.5rem;
+	margin-right: 0.5rem;
+	width: 2rem;
+	text-align: right;
+}
+
+.num_text{
+	width: calc(100% - 4rem);
 }
 
 @media (max-width: 2500px){
@@ -199,16 +206,34 @@ footer{
 }
 
 @media (max-width: 1100px){
+
+	.button.registration{
+		position: fixed;
+		top: 2rem;
+	}
+
+	#logos{
+		position: sticky;
+		bottom: 0;
+		height: 30rem;
+	}
+	.header_section{
+		margin-bottom: 2rem;
+	}
 	header{
 		position: relative;
 		width: 100%;
-		margin-bottom: 2rem;
-		min-height: 100vh;
+		margin-top: 0;
+		margin-bottom: 0;
+		min-height: auto;
+		padding-top: 6rem;
+		background-color: #fff;
 	}
 
 	#body_content{
 		min-height: 0;
 		margin-bottom: 0;
+		background-color: #fff;
 	}
 
 	#body_content,
@@ -221,13 +246,14 @@ footer{
 
 @media (max-width: 767px){
 	html{
-		font-size: 20px;
+		font-size: 18px;
 	}
 
-	#body_content{
-		min-height: 0;
-		margin-bottom: 0;
+	.button,
+	.button:before{
+		border: 0.1rem solid;
 	}
+
 
 	#body_content,
 	footer{

@@ -11,7 +11,6 @@ var window_width,
 function init(){
 	setVars();
 	window.addEventListener('mousemove', trackQuadrant);
-	window.addEventListener('touchmove', trackTouchQuadrant);
 	window.addEventListener('resize', setVars)
 
 	document.querySelectorAll('.pet').forEach((e)=>{
@@ -40,13 +39,6 @@ function cyclePet(e){
 	} else{
 		target_list.add('rec');
 	}
-}
-
-function trackTouchQuadrant(e){
-	var x = e.targetTouches[0].screenX;
-	var y = e.targetTouches[0].screenY;
-
-	setQuadrant(x, y);
 }
 
 function trackQuadrant(e){
