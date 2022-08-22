@@ -4,6 +4,7 @@
 	transform: translate(-50%, -50%);
 	position: fixed;
 	background: lightgray;
+	object-fit: none;
 	width: 40vw;
 	height: 22.5vw;
 	border-radius: .2em;
