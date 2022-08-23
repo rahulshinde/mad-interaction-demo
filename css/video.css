@@ -10,6 +10,7 @@
 	border-radius: .2em;
 	box-shadow: .2em .2em 1rem lightgray, -.2em -.2em 1rem lightgray;
 	transition: all .2s ease-in;
+	mix-blend-mode: color-burn;
 }
 
 .video.cornered{
