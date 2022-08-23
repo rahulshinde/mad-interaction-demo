@@ -295,7 +295,9 @@ footer{
 	}
 
 	header{
-		padding-top: 4rem;
+		top: auto;
+		bottom: auto;
+		padding-top: 6rem;
 		padding-bottom: 2.5rem;
 	}
 
@@ -321,6 +323,9 @@ footer{
 		transform: translate(-0.1rem, -0.1rem);
 	}
 
+	#body_content{
+		margin-top: 0;
+	}
 
 	#body_content,
 	footer{
