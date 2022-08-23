@@ -59,91 +59,147 @@ body.x-4.y-0 .skew{
 
 body.x-0.y-0 .button,
 body.x-0.y-0 .button:before,
+body.x-0.y-0 .session_heading,
+body.x-0.y-0 a,
 body.x-1.y-0 .button,
 body.x-1.y-0 .button:before,
+body.x-1.y-0 .session_heading,
+body.x-1.y-0 a,
 body.x-0.y-1 .button,
 body.x-0.y-1 .button:before,
+body.x-0.y-1 .session_heading,
+body.x-0.y-1 a,
 body.x-1.y-1 .button,
-body.x-1.y-1 .button:before{
+body.x-1.y-1 .button:before,
+body.x-1.y-1 .session_heading,
+body.x-1.y-1 a{
 	border-color: #f00;
 }
+
 
 /*top-center*/
 
 body.x-2.y-0 .button,
 body.x-2.y-0 .button:before,
+body.x-2.y-0 .session_heading,
+body.x-2.y-0 a,
 body.x-2.y-1 .button,
-body.x-2.y-1 .button:before{
+body.x-2.y-1 .button:before,
+body.x-2.y-1 .session_heading,
+body.x-2.y-1 a{
 	border-color: #f0f;
 }
+
 
 /*top-right*/
 
 body.x-3.y-0 .button,
 body.x-3.y-0 .button:before,
+body.x-3.y-0 .session_heading,
+body.x-3.y-0 a,
 body.x-4.y-0 .button,
 body.x-4.y-0 .button:before,
+body.x-4.y-0 .session_heading,
+body.x-4.y-0 a,
 body.x-3.y-1 .button,
 body.x-3.y-1 .button:before,
+body.x-3.y-1 .session_heading,
+body.x-3.y-1 a,
 body.x-4.y-1 .button,
-body.x-4.y-1 .button:before{
+body.x-4.y-1 .button:before,
+body.x-4.y-1 .session_heading,
+body.x-4.y-1 a{
 	border-color: #2500ff;
 }
+
 
 /*center-left*/
 
 body.x-0.y-2 .button,
 body.x-0.y-2 .button:before,
+body.x-0.y-2 .session_heading,
+body.x-0.y-2 a,
 body.x-1.y-2 .button,
-body.x-1.y-2 .button:before{
+body.x-1.y-2 .button:before,
+body.x-1.y-2 .session_heading,
+body.x-1.y-2 a{
 	border-color: #ff6600;
 }
+
 
 /*center-right*/
 
 body.x-3.y-2 .button,
 body.x-3.y-2 .button:before,
+body.x-3.y-2 .session_heading,
+body.x-3.y-2 a,
 body.x-4.y-2 .button,
-body.x-4.y-2 .button:before{
+body.x-4.y-2 .button:before,
+body.x-4.y-2 .session_heading,
+body.x-4.y-2 a{
 	border-color: #004fff;
 }
+
 
 
 /*bottom-left*/
 
 body.x-0.y-3 .button,
 body.x-0.y-3 .button:before,
+body.x-0.y-3 .session_heading,
+body.x-0.y-3 a,
 body.x-1.y-3 .button,
 body.x-1.y-3 .button:before,
+body.x-1.y-3 .session_heading,
+body.x-1.y-3 a,
 body.x-0.y-4 .button,
 body.x-0.y-4 .button:before,
+body.x-0.y-4 .session_heading,
+body.x-0.y-4 a,
 body.x-1.y-4 .button,
-body.x-1.y-4 .button:before{
+body.x-1.y-4 .button:before,
+body.x-1.y-4 .session_heading,
+body.x-1.y-4 a{
 	border-color: #b5ff00;
 }
+
 
 /*bottom-center*/
 
 body.x-2.y-3 .button,
 body.x-2.y-3 .button:before,
+body.x-2.y-3 .session_heading,
+body.x-2.y-3 a,
 body.x-2.y-4 .button,
-body.x-2.y-4 .button:before{
+body.x-2.y-4 .button:before,
+body.x-2.y-4 .session_heading,
+body.x-2.y-4 a{
 	border-color: #00ff00;
 }
+
 
 
 /*bottom-right*/
 
 body.x-3.y-3 .button,
 body.x-3.y-3 .button:before,
+body.x-3.y-3 .session_heading,
+body.x-3.y-3 a,
 body.x-4.y-3 .button,
 body.x-4.y-3 .button:before,
+body.x-4.y-3 .session_heading,
+body.x-4.y-3 a,
 body.x-3.y-4 .button,
 body.x-3.y-4 .button:before,
+body.x-3.y-4 .session_heading,
+body.x-3.y-4 a,
 body.x-4.y-4 .button,
-body.x-4.y-4 .button:before{
+body.x-4.y-4 .button:before,
+body.x-4.y-4 .session_heading,
+body.x-4.y-4 a{
 	border-color: #00ffcc;
 }
+
 
 /* Row 1*/
 

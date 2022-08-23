@@ -36,13 +36,24 @@ h1{
 	transition: filter steps(10) 2s;
 }
 
+a{
+	text-decoration: none;
+	border-bottom: 0.125rem solid;;
+}
+
 .button a{
 	position: relative;
 	display: inline-block;
 	text-decoration: none;
+	border: none;
 	color: inherit;
 	padding: 1rem 0.75rem;
 	z-index: 4;
+}
+
+.session_heading{
+	padding-top: 1em;
+	border-top: 0.125rem solid;
 }
 
 .button_background{
