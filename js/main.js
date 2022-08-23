@@ -37,6 +37,7 @@ var animation_sequence = [
 function init(){
 	animation_position = 0;
 	setVars();
+	pageLoad();
 	window.addEventListener('mousemove', trackQuadrant);
 	window.addEventListener('resize', setVars)
 
@@ -44,8 +45,21 @@ function init(){
 		e.addEventListener('mouseenter', cyclePetHoverHandler);
 	});
 
-	videoInteraction()
+}
 
+function pageLoad(){
+	setTimeout(function(){
+		document.querySelector('header').classList.add('visible');
+		document.querySelector('#logos').classList.remove('b_w');
+		document.querySelector('.button').classList.remove('b_w');
+	}, 1000);
+	setTimeout(function(){
+		document.querySelector('footer').classList.add('visible');
+		document.querySelector('#body_content').classList.add('visible');
+	}, 1500);
+	setTimeout(function(){
+		document.querySelector('.video').classList.add('visible');
+	}, 2000);
 }
 
 function setVars(){

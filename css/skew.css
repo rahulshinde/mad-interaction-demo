@@ -53,6 +53,98 @@ body.x-4.y-0 .skew{
 	transition: transform linear 0.1s;
 }
 
+/*color*/
+
+/*top-left*/
+
+body.x-0.y-0 .button,
+body.x-0.y-0 .button:before,
+body.x-1.y-0 .button,
+body.x-1.y-0 .button:before,
+body.x-0.y-1 .button,
+body.x-0.y-1 .button:before,
+body.x-1.y-1 .button,
+body.x-1.y-1 .button:before{
+	border-color: #f00;
+}
+
+/*top-center*/
+
+body.x-2.y-0 .button,
+body.x-2.y-0 .button:before,
+body.x-2.y-1 .button,
+body.x-2.y-1 .button:before{
+	border-color: #f0f;
+}
+
+/*top-right*/
+
+body.x-3.y-0 .button,
+body.x-3.y-0 .button:before,
+body.x-4.y-0 .button,
+body.x-4.y-0 .button:before,
+body.x-3.y-1 .button,
+body.x-3.y-1 .button:before,
+body.x-4.y-1 .button,
+body.x-4.y-1 .button:before{
+	border-color: #2500ff;
+}
+
+/*center-left*/
+
+body.x-0.y-2 .button,
+body.x-0.y-2 .button:before,
+body.x-1.y-2 .button,
+body.x-1.y-2 .button:before{
+	border-color: #ff6600;
+}
+
+/*center-right*/
+
+body.x-3.y-2 .button,
+body.x-3.y-2 .button:before,
+body.x-4.y-2 .button,
+body.x-4.y-2 .button:before{
+	border-color: #004fff;
+}
+
+
+/*bottom-left*/
+
+body.x-0.y-3 .button,
+body.x-0.y-3 .button:before,
+body.x-1.y-3 .button,
+body.x-1.y-3 .button:before,
+body.x-0.y-4 .button,
+body.x-0.y-4 .button:before,
+body.x-1.y-4 .button,
+body.x-1.y-4 .button:before{
+	border-color: #b5ff00;
+}
+
+/*bottom-center*/
+
+body.x-2.y-3 .button,
+body.x-2.y-3 .button:before,
+body.x-2.y-4 .button,
+body.x-2.y-4 .button:before{
+	border-color: #00ff00;
+}
+
+
+/*bottom-right*/
+
+body.x-3.y-3 .button,
+body.x-3.y-3 .button:before,
+body.x-4.y-3 .button,
+body.x-4.y-3 .button:before,
+body.x-3.y-4 .button,
+body.x-3.y-4 .button:before,
+body.x-4.y-4 .button,
+body.x-4.y-4 .button:before{
+	border-color: #00ffcc;
+}
+
 /* Row 1*/
 
 body.x-0.y-0 .button{

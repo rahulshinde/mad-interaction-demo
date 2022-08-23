@@ -1,35 +1,19 @@
 .video{
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	position: fixed;
 	background: lightgray;
 	object-fit: none;
-	width: 40vw;
-	height: 22.5vw;
+	width: 20vw;
+	height: 11.25vw;
 	border-radius: .2em;
 	box-shadow: .2em .2em 1rem lightgray, -.2em -.2em 1rem lightgray;
-	transition: all .2s ease-in;
-	mix-blend-mode: color-burn;
 	cursor: pointer;
-}
-
-@media screen and (any-hover: hover){
-	.video:hover{
-		box-shadow: .5em .5em 2rem lightgray, -.5em -.5em 2rem lightgray;
-	}
-}
-
-.video.cornered{
-	top: 100%;
-	left: 100vw;
-	transform: translate(calc(-100% - 1rem), calc(-100% - 1rem)) scale(.5);
+	bottom: 2rem;
+	right: 2rem;
 	transform-origin: bottom right;
 }
 
 @media (max-width: 1100px){
-	.video,
-	.video.cornered{
+	.video{
 		width: 30rem;
 		height: auto;
 		position: static;
