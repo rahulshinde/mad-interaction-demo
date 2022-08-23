@@ -10,6 +10,13 @@
 	border-radius: .2em;
 	box-shadow: .2em .2em 1rem lightgray, -.2em -.2em 1rem lightgray;
 	transition: all .2s ease-in;
+	cursor: pointer;
+}
+
+@media screen and (any-hover: hover){
+	.video:hover{
+		box-shadow: .5em .5em 2rem lightgray, -.5em -.5em 2rem lightgray;
+	}
 }
 
 .video.cornered{
@@ -28,6 +35,7 @@
 		display: block;
 		transform:  none;
 		margin: 0 auto 2rem auto;
+		margin-bottom: 33rem;
 	}
 }
 

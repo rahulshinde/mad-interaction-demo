@@ -213,10 +213,12 @@ footer{
 	}
 
 	#logos{
-		position: sticky;
-		position: -webkit-sticky;
-		bottom: 0;
-		height: 30rem;
+		position: fixed;
+		/*position: -webkit-sticky;*/
+		/*bottom: 0;
+		height: 30rem;*/
+		bottom: 8rem;
+		height: 23rem;
 	}
 	.header_section{
 		margin-bottom: 2rem;
@@ -228,13 +230,15 @@ footer{
 		margin-bottom: 0;
 		min-height: auto;
 		padding-top: 6rem;
-		background-color: #fff;
+		/*background-color: #fff;*/
+		background-color: rgba(255,255,255,.7);
 	}
 
 	#body_content{
 		min-height: 0;
 		margin-bottom: 0;
-		background-color: #fff;
+		/*background-color: #fff;*/
+		background-color: rgba(255,255,255,.9);
 	}
 
 	#body_content,
