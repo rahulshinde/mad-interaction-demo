@@ -191,6 +191,10 @@ footer{
 	margin-top: 0;
 }
 
+.intro_text{
+	font-size: 1.25rem;
+}
+
 .num_list{
 	display: flex;
 	flex-wrap: wrap;
