@@ -47,7 +47,7 @@ a{
 	text-decoration: none;
 	border: none;
 	color: inherit;
-	padding: 1rem 0.75rem;
+	padding: 0.8rem 1.1rem;
 	z-index: 4;
 }
 
@@ -192,7 +192,8 @@ footer{
 }
 
 .intro_text{
-	font-size: 1.25rem;
+	font-size: 1.4rem;
+	line-height: 1.05;
 }
 
 .num_list{
