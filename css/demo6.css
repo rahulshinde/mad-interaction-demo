@@ -1,5 +1,5 @@
 :root{
-	--small_column: 14rem;
+	--small_column: 10rem;
 	--large_column: calc(50% - var(--small_column)/2);
 }
 
@@ -182,11 +182,11 @@ footer{
 }
 
 #mit .inner_wrapper{
-	transform: translateX(-5rem);
+	transform: translateX(-3rem);
 }
 
 #mad .inner_wrapper{
-	transform: translateX(5rem);
+	transform: translateX(3rem);
 }
 
 .inner_wrapper{
@@ -203,54 +203,54 @@ footer{
 #m-1{
 	top: 0;
 	left: 0;
-	width: 10rem;
+	width: 6rem;
 }
 
 #m-2{
 	top: 0;
 	left: 4.9rem;
-	width: 10rem;
+	width: 6rem;
 }
 
 #m-3{
 	top: 4.47rem;
 	left: 0;
-	width: 10rem;	
+	width: 6rem;	
 }
 
 #i-1{
 	top: 5.24rem;
 	left: 2.04rem;
-	width: 9.75rem;	
+	width: 5.75rem;	
 }
 
 #i-2{
 	top: 9.73rem;
 	left: 2.04rem;
-	width: 8.48rem;
+	width: 4.48rem;
 }
 
 #i-3{
 	top: 9.73rem;
 	left: 2.93rem;
-	width: 11.45rem;	
+	width: 7.45rem;	
 }
 
 #t-1{
 	top: 10.5rem;
 	left: 0.7rem;
-	width: 10.05rem;	
+	width: 6.05rem;	
 }
 
 #t-2{
 	top: 10.5rem;
 	left: 4.2rem;
-	width: 8rem;
+	width: 4rem;
 }
 #t-3{
 	top: 14.97rem;
 	left: 2.93rem;
-	width: 7.85rem;
+	width: 3.85rem;
 }
 
 #body_content{

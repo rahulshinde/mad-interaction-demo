@@ -9,15 +9,15 @@ var window_width,
 // offsets in rems for each line
 // [starting x (top), starting y (left), width]
 var starting_offsets = {
-	'm-1': [0, 0, 10],
-	'm-2': [4.9, 0, 10],
-	'm-3': [0, 4.47, 10],
-	'i-1': [2.04, 5.24, 9.75],
-	'i-2': [2.04, 9.73, 8.48],
-	'i-3': [2.93, 9.73, 11.45],
-	't-1': [0.7, 10.5, 10.05],
-	't-2': [4.2, 10.5, 8],
-	't-3': [2.93, 14.97, 7.85]
+	'm-1': [0, 0, 6],
+	'm-2': [4.9, 0, 6],
+	'm-3': [0, 4.47, 6],
+	'i-1': [2.04, 5.24, 5.75],
+	'i-2': [2.04, 9.73, 4.48],
+	'i-3': [2.93, 9.73, 7.45],
+	't-1': [0.7, 10.5, 6.05],
+	't-2': [4.2, 10.5, 4],
+	't-3': [2.93, 14.97, 3.85]
 };
 
 
@@ -54,12 +54,12 @@ function scrollHandler(e){
 		calcRotation(key, starting_offsets[key], rem_offset);
 	}
 
-	document.querySelector('#mit .inner_wrapper').style.transform = 'translateX(-5rem) translateY(-' + offset + 'px)';
-	document.querySelector('#mad .inner_wrapper').style.transform = 'translateX(5rem) translateY(' + offset + 'px)';
+	document.querySelector('#mit .inner_wrapper').style.transform = 'translateX(-3rem) translateY(-' + offset + 'px)';
+	document.querySelector('#mad .inner_wrapper').style.transform = 'translateX(3rem) translateY(' + offset + 'px)';
 } 
 
 function calcRotation(id, array, rem_offset){
-	start_x = -5 + array[0]
+	start_x = -3 + array[0]
 	end_x = start_x + array[2]
 	start_y = array[1]
 	end_y = array[1] + rem_offset
