@@ -1,0 +1,429 @@
+:root{
+	--small_column: 14rem;
+	--large_column: calc(50% - var(--small_column)/2);
+}
+
+html{
+	font-size: 42px;
+}
+
+body{
+	letter-spacing: 0.02em;
+}
+
+::selection{
+	color: darkgray;
+}
+
+h1{
+	font-size: 12vh;
+	margin-top: 0rem;
+	margin-bottom: 0rem;
+	letter-spacing: 0.01em;
+	line-height: 0.9;
+}
+
+.caps{
+	text-transform: uppercase;
+}
+
+.button{
+	display: inline-block;
+	position: relative;
+	color: #000;
+	text-transform: uppercase;
+	letter-spacing: 0em;
+	border: 0.125rem solid;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 0px #000;
+	background-color: #fff;
+	z-index: 10;
+	transition: filter steps(10) 2s;
+}
+
+a{
+	text-decoration: none;
+	border-bottom: 0.125rem solid;
+}
+
+.button a{
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+	border: none;
+	color: inherit;
+	padding: 0.8rem 1.1rem;
+	z-index: 4;
+}
+
+.session_heading{
+	border-top: 0.125rem solid;
+	padding-top: 0.25em;
+}
+
+.button_background{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: inherit;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
+.button:hover{
+	background: #000;
+	color: #fff;
+}
+
+.button:before{
+	content: '';
+	display: block;
+	position: absolute;
+	box-sizing: border-box;
+	width: calc(100% + 0.125rem);
+	height: calc(100% + 0.125rem);
+	transform: translate(-0.075rem, -0.075rem);
+	border: 0.125rem solid #000;
+	top: 0;
+	left: 0;
+	z-index: -1;
+
+}
+
+header,
+footer,
+#body_content,
+.video{
+	transition: opacity steps(5) 1s;
+	opacity: 1;
+}
+
+header.visible,
+footer.visible,
+#body_content.visible,
+.video.visible{
+	opacity: 1;
+}
+
+header{
+	position: fixed;
+	display: flex;
+	top: 2rem;
+	bottom: 2rem;
+	padding: 0 2rem;
+	box-sizing: border-box;
+	left: 0rem;
+	bottom: 2rem;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	width: var(--large_column);
+	letter-spacing: 0.04em;
+	line-height: 1.05;
+}
+
+footer{
+	font-size: 0.65rem;
+	font-family: 'attribute-mono', sans-serif;
+	line-height: 1.7;
+	font-weight: 300;
+	font-style: normal;
+	margin-bottom: 2rem;
+}
+
+#logos{
+	position: fixed;
+	width: var(--small_column);
+	height: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	pointer-events: none;
+	z-index: -1;
+	transition: filter steps(10) 2s;
+}
+
+#logos.b_w,
+.button.b_w{
+	/*filter: grayscale(100%) contrast(100%);*/
+}
+
+#mit_logo{
+	position: fixed;
+	bottom: 2rem;
+	left: 2rem;
+	display: block;
+	width: 2rem;
+}
+
+#mit_logo:hover rect{
+	fill: transparent;
+}
+
+#mit_logo rect{
+	stroke: #000;
+}
+
+#mit_logo #i_dot{
+	fill: transparent;
+}
+
+.logo_container{
+	display: inline-block;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.logo_container img{
+	width: 5rem;
+}
+
+#mit .inner_wrapper{
+	transform: translateX(-5rem);
+}
+
+#mad .inner_wrapper{
+	transform: translateX(5rem);
+}
+
+.inner_wrapper{
+	position: relative;
+	display: inline-block;
+}
+
+.logo_line{
+	border-top: 0.14rem solid;
+	position: absolute;
+	transform-origin: bottom left;
+}
+
+#m-1{
+	top: 0;
+	left: 0;
+	width: 10rem;
+}
+
+#m-2{
+	top: 0;
+	left: 4.9rem;
+	width: 10rem;
+}
+
+#m-3{
+	top: 4.47rem;
+	left: 0;
+	width: 10rem;	
+}
+
+#i-1{
+	top: 5.24rem;
+	left: 2.04rem;
+	width: 9.75rem;	
+}
+
+#i-2{
+	top: 9.73rem;
+	left: 2.04rem;
+	width: 8.48rem;
+}
+
+#i-3{
+	top: 9.73rem;
+	left: 2.93rem;
+	width: 11.45rem;	
+}
+
+#t-1{
+	top: 10.5rem;
+	left: 0.7rem;
+	width: 10.05rem;	
+}
+
+#t-2{
+	top: 10.5rem;
+	left: 4.2rem;
+	width: 8rem;
+}
+#t-3{
+	top: 14.97rem;
+	left: 2.93rem;
+	width: 7.85rem;
+}
+
+#body_content{
+	font-family: monotype-grotesque, sans-serif;
+	font-weight: 400;
+	letter-spacing: 0;
+	font-style: normal;
+	min-height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 2rem;
+	margin-bottom: 4rem;
+}
+
+#body_content,
+footer{
+	padding-left: 2rem;
+	padding-right: 2rem;
+	width: var(--large_column);
+	margin-left: calc(50% + var(--small_column)/2);
+}
+
+#body_content p{
+	margin-top: 0;
+}
+
+.intro_text{
+	font-family: 'Venus W04 Regular', sans-serif;
+	font-size: 1.4rem;
+	line-height: 1.05;
+}
+
+.num_list{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.num{
+	margin-left: 1.5rem;
+	margin-right: 0.5rem;
+	width: 2rem;
+	text-align: right;
+}
+
+.num_text{
+	width: calc(100% - 4rem);
+}
+
+@media (max-width: 2500px){
+	html{
+		font-size: 40px;
+	}
+}
+
+@media (max-width: 2200px){
+	html{
+		font-size: 35px;
+	}
+}
+
+@media (max-width: 1900px){
+	html{
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 1600px){
+	html{
+		font-size: 28px;
+	}
+}
+
+@media (max-width: 1440px){
+	html{
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 1100px){
+
+	.button.registration{
+		position: fixed;
+		top: 2rem;
+	}
+
+	#logos{
+		position: fixed;
+		/*position: -webkit-sticky;*/
+		/*bottom: 0;
+		height: 30rem;*/
+		bottom: 8rem;
+		height: 23rem;
+	}
+	.header_section{
+		margin-bottom: 2rem;
+	}
+	header{
+		position: relative;
+		width: 100%;
+		margin-top: 0;
+		margin-bottom: 0;
+		min-height: auto;
+		padding-top: 6rem;
+		background-color: #fff;
+	}
+
+	#body_content{
+		min-height: 0;
+		margin-bottom: 0;
+		/*background-color: #fff;*/
+		background-color: rgba(255,255,255,.9);
+	}
+
+	#body_content,
+	footer{
+		margin-left: auto;
+		margin-right: auto;
+		width: 30rem;
+	}
+
+	#mit_logo{
+		left: auto;
+		right: 2rem;
+	}
+}
+
+@media (max-width: 767px){
+	html{
+		font-size: 18px;
+	}
+
+	.button.registration{
+		top: 1rem;
+	}
+
+	header{
+		top: auto;
+		bottom: auto;
+		padding-top: 6rem;
+		padding-bottom: 2.5rem;
+	}
+
+	.header_section{
+		margin-bottom: 1.5rem;
+	}
+
+	.button,
+	.button:before{
+		border: 0.1rem solid;
+	}
+
+	a{
+		border-bottom: 0.1rem solid;
+	}
+	.session_heading{
+		border-top: 0.1rem solid;
+	}
+
+	.button:before{
+		width: calc(100% + 0.2rem);
+		height: calc(100% + 0.2rem);
+		transform: translate(-0.1rem, -0.1rem);
+	}
+
+	#body_content{
+		margin-top: 0;
+	}
+
+	#body_content,
+	footer{
+		margin-left: 1rem;
+		margin-right: 1rem;
+		width: auto;
+	}
+}
