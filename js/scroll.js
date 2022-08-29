@@ -25,6 +25,37 @@ function init(){
 	setVars();
 
 	window.addEventListener('scroll', scrollHandler);
+
+	document.querySelectorAll('.pet').forEach((e)=>{
+		e.addEventListener('mouseenter', cyclePetHoverHandler);
+	});
+}
+
+function randomPet(){
+	document.querySelectorAll('.pet').forEach((e)=>{
+		if(Math.random() > 0.5){
+			cyclePet(e.classList);
+		}
+	})
+}
+
+function cyclePetHoverHandler(e){
+	if (window_width < 1100){
+		return;
+	}
+
+	cyclePet(e.target.classList)
+}
+
+function cyclePet(target_list){
+	if (target_list.contains('rec')){
+		target_list.remove('rec');
+		target_list.add('ital');
+	} else if(target_list.contains('ital')){
+		target_list.remove('ital');
+	} else{
+		target_list.add('rec');
+	}
 }
 
 function setVars(){
