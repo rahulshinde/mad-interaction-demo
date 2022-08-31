@@ -5,7 +5,7 @@
 }
 
 html{
-	font-size: 42px;
+	font-size: 34px;
 }
 
 body{
@@ -180,6 +180,7 @@ footer{
 
 .logo_container img{
 	width: 5rem;
+	-webkit-backface-visibility: hidden;
 }
 
 #mit .inner_wrapper{
@@ -269,7 +270,8 @@ footer{
 
 #body_content,
 footer{
-	padding-left: 5.5rem;
+	box-sizing: border-box;
+	padding-left: 5rem;
 	padding-right: 2rem;
 	width: var(--large_column);
 	margin-left: calc(50% + var(--small_column)/2);
@@ -305,23 +307,37 @@ footer{
 	html{
 		font-size: 40px;
 	}
+
 }
 
 @media (max-width: 2200px){
 	html{
-		font-size: 35px;
+		font-size: 30px;
+	}
+	#body_content,
+	footer{
+		padding-left: 5.5rem;
 	}
 }
 
 @media (max-width: 1900px){
 	html{
-		font-size: 30px;
+		font-size: 26px;
+	}
+
+	#body_content,
+	footer{
+		padding-left: 4.5rem;
 	}
 }
 
 @media (max-width: 1600px){
 	html{
-		font-size: 28px;
+		font-size: 24px;
+	}
+	#body_content,
+	footer{
+		padding-left: 4rem;
 	}
 }
 
@@ -355,8 +371,7 @@ footer{
 	}
 
 	.button.registration{
-		position: fixed;
-		top: 2rem;
+		margin-bottom: 2rem;
 	}
 
 	#logos{
@@ -364,43 +379,50 @@ footer{
 		/*position: -webkit-sticky;*/
 		/*bottom: 0;
 		height: 30rem;*/
-		bottom: 6rem;
-		height: 23rem;
+		top: 2rem;
+		left: 2rem;
+		height: 15.5rem;
+		transform: scale(0.35);
+		transform-origin: top left;
+	}
+	.logo_container{
+		position: absolute;
 	}
 	.header_section{
 		margin-bottom: 2rem;
 	}
 	header{
 		position: relative;
-		width: 100%;
+		width: calc(100% - 12rem);
+		margin-left: 6rem;
 		margin-top: 0;
 		margin-bottom: 0;
 		min-height: auto;
-		padding-top: 6rem;
-		background-color: rgba(255,255,255,.9);
+		/*background-color: rgba(255,255,255,.9);*/
 	}
 
 	#body_content{
 		min-height: 0;
 		margin-bottom: 0;
 		/*background-color: #fff;*/
-		background-color: rgba(255,255,255,.9);
+		/*background-color: rgba(255,255,255,.9);*/
 	}
 
 	#body_content,
 	footer{
-		margin-left: auto;
+		margin-left: 6rem;
 		margin-right: auto;
-		width: 30rem;
+		width: calc(100% - 12rem);
 	}
 
 	#mit_logo{
+		top: 2rem;
 		left: auto;
 		right: 2rem;
 	}
 
 	footer{
-		margin-top: 100vh;
+		margin-top: 2rem;
 	}
 }
 
@@ -416,8 +438,11 @@ footer{
 	header{
 		top: auto;
 		bottom: auto;
-		padding-top: 6rem;
+		padding-top: 2rem;
 		padding-bottom: 2.5rem;
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
 	}
 
 	.header_section{
@@ -454,6 +479,11 @@ footer{
 	footer{
 		padding-left: 2rem;
 		padding-right: 2rem;
+		margin: 0 auto;
 		width: 100%;
+	}
+
+	footer{
+		margin-bottom: 2rem;
 	}
 }

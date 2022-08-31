@@ -73,7 +73,11 @@ function setVars(){
 
 	logo_height = document.querySelector('.logo_container img').clientHeight;
 
-	logo_max_offset = window_height/2 - logo_height/2 - 40;
+	if (window_width <= 1100){
+		logo_max_offset = 2 * font_size;
+	} else{
+		logo_max_offset = window_height/2 - logo_height/2 - 40;
+	}
 }
 
 function scrollHandler(e){
