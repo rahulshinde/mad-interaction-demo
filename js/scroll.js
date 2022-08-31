@@ -76,7 +76,7 @@ function setVars(){
 	if (window_width <= 1100){
 		logo_max_offset = 2 * font_size;
 	} else{
-		logo_max_offset = window_height/2 - logo_height/2 - 40;
+		logo_max_offset = window_height/2 - logo_height/2 - 2 * font_size;
 	}
 }
 

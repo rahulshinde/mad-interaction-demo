@@ -39,7 +39,7 @@ function init(){
 	setVars();
 	pageLoad();
 	window.addEventListener('mousemove', trackQuadrant);
-	window.addEventListener('resize', setVars)
+	window.addEventListener('resize', setVars);
 
 	document.querySelectorAll('.pet').forEach((e)=>{
 		e.addEventListener('mouseenter', cyclePetHoverHandler);
