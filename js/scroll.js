@@ -44,7 +44,7 @@ function randomPet(){
 function startAutoplay(){
 	animation_interval = setInterval(function(){
 		randomPet();
-	}, 750);
+	}, 1500);
 }
 
 function cyclePetHoverHandler(e){
