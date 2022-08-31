@@ -129,7 +129,7 @@ footer{
 	font-size: 0.65rem;
 	font-family: 'attribute-mono', sans-serif;
 	line-height: 1.7;
-	font-weight: 300;
+	font-weight: 200;
 	font-style: normal;
 	margin-bottom: 2rem;
 }
@@ -443,7 +443,7 @@ footer{
 	}
 
 	#logos{
-		bottom: 10rem;
+		bottom: 4rem;
 	}
 
 	#body_content{
@@ -452,8 +452,8 @@ footer{
 
 	#body_content,
 	footer{
-		margin-left: 1rem;
-		margin-right: 1rem;
-		width: auto;
+		padding-left: 2rem;
+		padding-right: 2rem;
+		width: 100%;
 	}
 }
