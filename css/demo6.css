@@ -38,7 +38,7 @@ h1{
 	box-sizing: border-box;
 	box-shadow: 0px 0px 0px #000;
 	background-color: #fff;
-	z-index: 10;
+	z-index: 4;
 	transition: filter steps(10) 2s;
 }
 
@@ -472,7 +472,7 @@ footer{
 		width: 100%;
 		height: 7rem;
 		background: #fff;
-		z-index: 1;
+		z-index: 4;
 	}
 
 	.header_section{
@@ -501,7 +501,7 @@ footer{
 		bottom: auto;
 		top: 3rem;
 		left: 1rem;
-		z-index: 2;
+		z-index: 5;
 		transform: scale(0.28);
 	}
 
@@ -525,8 +525,8 @@ footer{
 
 	#body_content,
 	footer{
-		padding-left: 2rem;
-		padding-right: 2rem;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
 		margin: 0 auto;
 		width: 100%;
 	}
