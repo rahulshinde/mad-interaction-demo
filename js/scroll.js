@@ -25,6 +25,7 @@ function init(){
 	setVars();
 
 	window.addEventListener('scroll', scrollHandler);
+	window.addEventListener('resize', setVars);
 
 	document.querySelectorAll('.pet').forEach((e)=>{
 		e.addEventListener('mouseenter', cyclePetHoverHandler);
