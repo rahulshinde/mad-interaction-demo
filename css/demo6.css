@@ -443,7 +443,7 @@ footer{
 	header{
 		top: auto;
 		bottom: auto;
-		padding-top: 2rem;
+		padding-top: 10rem;
 		padding-bottom: 2.5rem;
 		margin-left: 0;
 		margin-right: 0;
@@ -473,7 +473,8 @@ footer{
 	}
 
 	#logos{
-		bottom: 4rem;
+		bottom: auto;
+		top: 4rem;
 	}
 
 	#body_content{
