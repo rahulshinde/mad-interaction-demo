@@ -303,6 +303,14 @@ footer{
 	width: calc(100% - 4rem);
 }
 
+.desktop{
+	display: block;
+}
+
+.mobile{
+	display: none;
+}
+
 @media (max-width: 2500px){
 	html{
 		font-size: 40px;
@@ -432,22 +440,39 @@ footer{
 }
 
 @media (max-width: 767px){
+	.mobile{
+		display: block;
+	}
+	.desktop{
+		display: none;
+	}
 	html{
 		font-size: 18px;
 	}
 
 	.button.registration{
-		top: 1rem;
+		top: auto;
 	}
 
 	header{
 		top: auto;
 		bottom: auto;
-		padding-top: 10rem;
+		padding-top: 8rem;
 		padding-bottom: 2.5rem;
 		margin-left: 0;
 		margin-right: 0;
 		width: 100%;
+	}
+
+	header:after{
+		content: '';
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 7rem;
+		background: #fff;
+		z-index: 1;
 	}
 
 	.header_section{
@@ -474,7 +499,24 @@ footer{
 
 	#logos{
 		bottom: auto;
-		top: 4rem;
+		top: 3rem;
+		left: 1rem;
+		z-index: 2;
+		transform: scale(0.28);
+	}
+
+	#logo_text span{
+		display: inline;
+	}
+
+	#logo_text{
+		display: block;
+		position: fixed;
+		left: 5rem;
+		top: 1.5rem;
+		text-align: left;
+		width: 11rem;
+		z-index: 10;
 	}
 
 	#body_content{
