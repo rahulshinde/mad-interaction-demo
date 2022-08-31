@@ -4,7 +4,8 @@ var window_width,
 		window_height,
 		document_height,
 		font_size,
-		logo_max_offset;
+		logo_max_offset,
+		auto_playing_animation;
 
 // offsets in rems for each line
 // [starting x (top), starting y (left), width]
@@ -38,6 +39,12 @@ function randomPet(){
 			cyclePet(e.classList);
 		}
 	})
+}
+
+function startAutoplay(){
+	animation_interval = setInterval(function(){
+		randomPet();
+	}, 750);
 }
 
 function cyclePetHoverHandler(e){
@@ -77,6 +84,14 @@ function setVars(){
 		logo_max_offset = 2 * font_size;
 	} else{
 		logo_max_offset = window_height/2 - logo_height/2 - 2 * font_size;
+	}
+
+	if(window_width <= 1100 && !auto_playing_animation){
+		startAutoplay();
+		auto_playing_animation = true;
+	} else if (window_width > 1100 && auto_playing_animation){
+		auto_playing_animation = false;
+		clearInterval(animation_interval);
 	}
 }
 

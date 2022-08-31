@@ -383,7 +383,7 @@ footer{
 	}
 
 	h1{
-		font-size: 4rem;
+		font-size: 6rem;
 	}
 
 	#logos{
@@ -442,6 +442,9 @@ footer{
 @media (max-width: 767px){
 	.mobile{
 		display: block;
+	}
+	h1{
+		font-size: 4rem;
 	}
 	.desktop{
 		display: none;
