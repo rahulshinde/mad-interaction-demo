@@ -35,7 +35,7 @@ var animation_sequence = [
 ]
 
 function init(){
-	animation_position = 0;
+	console.log('hi');
 	setVars();
 	pageLoad();
 	window.addEventListener('mousemove', trackQuadrant);
@@ -44,7 +44,6 @@ function init(){
 	document.querySelectorAll('.pet').forEach((e)=>{
 		e.addEventListener('mouseenter', cyclePetHoverHandler);
 	});
-
 }
 
 function pageLoad(){

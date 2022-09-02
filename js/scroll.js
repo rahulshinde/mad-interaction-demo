@@ -24,7 +24,10 @@ var starting_offsets = {
 
 function init(){
 	setVars();
-
+	randomPet();
+	randomPet();
+	randomPet();
+	
 	window.addEventListener('scroll', scrollHandler);
 	window.addEventListener('resize', setVars);
 
