@@ -28,6 +28,9 @@ h1{
 
 .caps{
 	text-transform: uppercase;
+}
+
+.caps_ls{
 	letter-spacing: 0.05em;
 }
 
@@ -58,6 +61,7 @@ a{
 	color: inherit;
 	padding: 0.8rem 1.1rem;
 	z-index: 4;
+	letter-spacing: 0.05em;
 }
 
 .session_heading{
