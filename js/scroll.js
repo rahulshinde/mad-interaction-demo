@@ -27,7 +27,7 @@ function init(){
 	randomPet();
 	randomPet();
 	randomPet();
-	
+
 	window.addEventListener('scroll', scrollHandler);
 	window.addEventListener('resize', setVars);
 
@@ -121,8 +121,6 @@ function calcRotation(id, array, rem_offset){
 
 	var distance = Math.sqrt((end_x - start_x) * (end_x - start_x) + (end_y - start_y) * (end_y - start_y));
 	var slope = radians_to_degrees(Math.atan((end_y - start_y) / (end_x - start_x)));
-
-	console.log(slope);
 
 	document.getElementById(id).style.width = distance + 'rem';
 	document.getElementById(id).style.transform = 'rotate(' + slope + 'deg)';
