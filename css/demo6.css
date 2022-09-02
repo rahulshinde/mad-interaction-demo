@@ -28,6 +28,7 @@ h1{
 
 .caps{
 	text-transform: uppercase;
+	letter-spacing: 0.05em;
 }
 
 .button{
